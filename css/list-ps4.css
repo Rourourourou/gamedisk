@@ -1,0 +1,268 @@
+body {
+    color: white;
+    font-family: "微軟正黑體";
+}
+
+#top-bar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    right: 0px;
+    background-color: rgba(220, 231, 252, 0.52);
+    background-blend-mode: multiply;
+    background-image: url("../img/4567.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+    max-height: 75px;
+    max-width: 75px;
+}
+
+.menu-btn {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 35px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+
+.menu-img {
+    display: flex;
+    float: right;
+    max-width: 35px;
+    max-height: 35px;
+    padding-top: 20px;
+    padding-left: 15px;
+    
+}
+
+.dropdown {
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1c0;
+    max-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(221, 221, 221, 0.87);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #bbbbbb2c;
+}
+.search {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-self: center;
+    width: 800px;
+    padding-left: 400px;
+    padding-top: 35px;
+}
+
+.search-text {
+    display: flex;
+}
+
+.search-btn {
+    display: flex;
+    content: url("../img/loupe.png");
+    padding-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+#content {
+    /*這裡開始是主頁面*/
+    background-color: rgba(210, 227, 252, 0.534);
+    background-blend-mode: multiply;
+    background-image: url("../img/1234.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 100px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: auto;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 50px;
+
+}
+
+.title-bg {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.418);
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: 3px solid rgba(212, 182, 121, 0.808);
+    color: rgb(230, 198, 134);;
+}
+
+.infor {
+    background-color: rgba(0, 0, 0, 0.425);
+    border-radius: 10px;
+    width: 1300px;
+    display: block;
+    margin: 20px auto 50px auto;
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    margin: 20px auto 50px auto;
+
+}
+
+.prc {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 50px 50px 20px 50px;
+    border-radius: 5px;
+    box-shadow: 15px 10px 5px 0px rgba(0, 0, 0, 0.514);
+    border-right: 4px solid rgba(212, 182, 121, 0.808);
+    border-bottom:4px solid rgba(212, 182, 121, 0.808); ;
+ 
+}
+
+.prc-text {
+    height: 100px;
+    background-color: rgba(147, 192, 207, 0.432);
+    border: rgba(0, 0, 0, 0.514) 3px solid;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+
+}
+
+.sell-name {
+    text-align: left;
+    font-size: 40px;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+.sell-infor {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgba(27, 56, 153, 0.726);
+}
+
+.sell-amount {
+    text-align: left;
+    font-size: 30px;
+    padding-left: 10px;
+    color: rgba(231, 195, 129, 0.952);
+    display: inline-flex;
+}
+
+.sell-btn {
+    display: inline-flex;
+    margin-right: 20px;
+
+        border:0;
+        background-color:rgba(0, 0, 0, 0.322);
+        color:rgba(231, 195, 129, 0.952);
+        border-radius:5px;
+        cursor:pointer;
+
+        height: 40px;
+        width: 100px;
+
+        vertical-align: middle;
+
+
+
+}
+
+
+.sell-btn:hover{
+    color:rgba(0, 0, 0, 0.829);
+    background-color:rgba(231, 195, 129, 0.664);
+    border:2px rgba(0, 0, 0, 0.322) solid;
+  }
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    /*這裡開始是資訊列*/
+    color: white;
+    background-color: rgba(0, 0, 0, 0.637);
+    border-top: rgb(220, 228, 248) solid 3px;
+    display: block;
+    height: 100px;
+    text-align: center;
+}
+
+.foot-btn {
+    letter-spacing: 100px;
+
+}
+
+.fb {
+    content: url("../img/facebook.png");
+    width: 100%;
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.ig {
+    content: url("../img/instagram.png");
+    width: 100%;
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.mail {
+    content: url("../img/email.png");
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;
+}
+.about {
+    content: url("../img/info.png");
+    width: 100%;
+    max-width: 45px;
+    max-height: 45px;
+}

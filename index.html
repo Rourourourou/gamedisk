@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        @import "css/home.css";
+    </style>
+    <script src="js/jquery-3.6.0.min.js">
+        $(function () {
+            $(window).load(function () {
+                $(window).bind('scroll resize', function () {
+                    var $this = $(this); var $this_Top = $this.scrollTop();
+                    if ($this_Top < 100) { $('#top-bar').stop().animate({ top: "-65px" }); } if ($this_Top > 100) {
+                        $('#top-bar').stop().animate({ top: "0px" });
+                    }
+                }).scroll();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!--這裡是選單-->
+    <div id="top-bar">
+
+        <div class="menu-btn">
+            <a href="html/shopping_car.html"><img src="img/shopping-cart.png" class="menu-img"></a>
+            <a href="html/client.html"><img src="img/client.png" class="menu-img"></a>
+            <!--有選單的程式碼
+                <div class="dropdown"><a href="html/client.html"><img src="img/client.png"
+                        class="menu-img dropbtn"></a>
+                <div class="dropdown-content">
+                    <a href="#">Log In</a>
+                    <a href="html/client.html">會員專區</a>
+                </div>
+            </div>-->
+
+            <div class="dropdown"><img src="img/console.png" class="menu-img dropbtn">
+                <div class="dropdown-content">
+                    <a href="html/list-ps5.html">PS5</a>
+                    <a href="html/list-ps4.html">PS4</a>
+                    <a href="html/list-switch.html">SWITCH</a>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="index.html"><img src="img/gamedisk.png" class="logo"></a>
+
+        <div class="search">
+            <div class="search-text"><input type="search" name="q" placeholder="Search" size="100"></div>
+            <div class="search-btn"><input type="button"></div>
+        </div>
+
+    </div>
+    <!--這裡是頁面-->
+    <div id="content">
+        <!--這裡是廣告-->
+        <div class="ad">
+            <div class="w3-display-container">
+                <a href="html/sell.html"><img class="mySlides adimg" src="img/ad1.png"></a>
+                <a href="html/sell.html"><img class="mySlides adimg" src="img/ad2.png"></a>
+                <a href="html/sell.html"><img class="mySlides adimg" src="img/ad3.png"></a>
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                    style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs1(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs1(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv1(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv1(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv1(3)"></span>
+                </div>
+            </div>
+            <script>
+                var slideIndex = 1;
+                showDivs1(slideIndex);
+
+                function plusDivs1(n) {
+                    showDivs1(slideIndex += n);
+                }
+
+                function currentDiv1(n) {
+                    showDivs1(slideIndex = n);
+                }
+
+                function showDivs1(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" w3-white", "");
+                    }
+                    x[slideIndex - 1].style.display = "inline-block";
+                    dots[slideIndex - 1].className += " w3-white";
+                }
+            </script>
+        </div>
+
+        <!--這裡是熱門推薦-->
+        <div class="recommend">
+            <div class="title">
+                <div class="title-bg">熱門推薦</div>
+            </div>
+            <div class="exhibit">
+                <a href="html/sell-sm.html"><img src="img/spider.jpg" class="eximg"></a>
+                <p class="a">承襲以漫威超級英雄漫畫《蜘蛛人》改編的內容與玩法，並改由新世代主角邁爾斯‧摩拉斯擔綱演出。<br/>
+                    本次更新導入了「ZivaRT」來讓穿著特定戰衣時邁爾斯的肌肉動態更寫實等，此外還改善了遊戲運作的穩定性。
+                    </p>
+                <a href="html/sell-ds3.html"><img src="img/Dark_souls.jpg" class="eximg" id="centerimg"></a>
+                <p class="a">本作將帶來更廣闊的世界地圖來讓玩家恣意探索，並加強了遊戲整體氣氛的表現，讓畫面呈現不只是一片黑暗，而是會藉由黃昏或是霧氣等天氣效果，來強化遊戲所設定的「末日」主題。</p>
+                <a href="html/sell.html"><img src="img/GTA5.jpg" class="eximg"></a>
+                <p class="a">本系列至今為止龐大也最具野心的作品。<br/>
+                    以幅員遼闊的 Los Santos 城市及鄰近地區為舞台，同時也帶來了上至高山、下至深海，規模空前、細膩無比且充滿生命力的開放世界遊戲。
+                    </p>
+            </div>
+        </div>
+        <!--這裡是分類-->
+        <div class="category">
+            <div class="title">
+                <div class="title-bg">分類</div>
+            </div>
+            <div class="w3-display-container">
+                <a href="html/list-ps5.html"><img class="mySlides1 ceimg" src="img/ps5.png"></a>
+                <a href="html/list-ps4.html"><img class="mySlides1 ceimg" src="img/ps4.png"></a>
+                <a href="html/list-switch.html"><img class="mySlides1 ceimg" src="img/switch.png"></a>
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                    style="width:20%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo1 w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo1 w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo1 w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                </div>
+            </div>
+        </div>
+        <script>
+            var slideIndex1 = 1;
+            showDivs(slideIndex1);
+
+            function plusDivs(n) {
+                showDivs(slideIndex1 += n);
+            }
+
+            function currentDiv(n) {
+                showDivs(slideIndex1 = n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides1");
+                var dots = document.getElementsByClassName("demo1");
+                if (n > x.length) { slideIndex1 = 1 }
+                if (n < 1) { slideIndex1 = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-white", "");
+                }
+                x[slideIndex1 - 1].style.display = "inline-block";
+                dots[slideIndex1 - 1].className += " w3-white";
+            }
+        </script>
+
+        <!--這裡是資訊列-->
+        <div class="footer">
+            <div class="foot-btn">
+                <a href="https://www.facebook.com/" class="fb"><input type="button"></a>
+                <a href="https://www.instagram.com/" class="ig"><input type="button"></a>
+                <a href="mailto:aoya17@gmail.com" class="mail"><input type="button"></a>
+                <a href="html/about_us.html" class="about"><input type="button"></a>
+            </div>
+            <p class="b">Copyright@2021 By GameDisk Rights Reseved</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+body {
+    color: white;
+    font-family: "微軟正黑體";
+}
+
+#top-bar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    right: 0px;
+    background-color: rgba(220, 231, 252, 0.52);
+    background-blend-mode: multiply;
+    background-image: url("../img/4567.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+    max-height: 75px;
+    max-width: 75px;
+}
+
+.menu-btn {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 35px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.menu-img {
+    display: flex;
+    float: right;
+    max-width: 35px;
+    max-height: 35px;
+    padding-top: 20px;
+    padding-left: 15px;
+    
+}
+
+
+.dropdown {
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1c0;
+    max-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(221, 221, 221, 0.87);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #bbbbbb2c;
+}
+
+.search {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-self: center;
+    width: 800px;
+    padding-left: 400px;
+    padding-top: 35px;
+}
+
+.search-text {
+    display: flex;
+}
+
+.search-btn {
+    display: flex;
+    content: url("../img/loupe.png");
+    padding-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+#content {
+    /*這裡開始是主頁面*/
+    background-color: rgba(210, 227, 252, 0.534);
+    background-blend-mode: multiply;
+    background-image: url("../img/1234.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 100px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: auto;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.title-bg {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.404);
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: rgba(230, 196, 146, 0.815) solid 3px;
+    color:rgba(230, 196, 146, 0.904) ;
+}
+
+
+
+.infor {
+    background-color: rgba(0, 0, 0, 0.411);
+    border-radius: 10px;
+    width: 1300px;
+    display: block;
+    margin: 20px auto 50px auto;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px 10px 50px;
+}
+
+.record {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.164);
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: rgba(197, 152, 83, 0.815);
+
+}
+
+.record-title {
+    background-color: rgba(41, 41, 41, 0.637);
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: rgba(230, 196, 146, 0.815) solid 3px;
+    color: rgba(197, 152, 83, 0.815);
+}
+
+.title-table {
+    font-size: 30px;
+    text-align: center;
+}
+
+.title-td {
+    padding-left: 120px;
+}
+
+.re-imgs {
+    display: flex;
+    justify-self: flex-start;
+    width: 200px;
+    height: 200px;
+
+    margin: 20px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.re-table {
+    border-spacing: 20px;
+    text-align: center;
+}
+
+.re-td {
+    font-size: 30px;
+    color:rgba(247, 200, 129, 0.575);
+    padding-right: 230px;
+
+    font-weight: bold;
+}
+.buy{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.buy-amount{
+    font-size: 40px;
+    color: rgb(202, 78, 29);
+    float: right;
+    margin-right: 100px;
+}
+
+
+.buy-btn {
+    display: inline-flex;
+    margin-right: 20px;
+
+        border:0;
+        background-color:rgba(0, 0, 0, 0.322);
+        color:rgba(231, 195, 129, 0.952);
+        border-radius:5px;
+        cursor:pointer;
+
+        height: 60px;
+        width: 120px;
+
+        vertical-align: middle;
+
+        font-size: 20px;
+        font-weight: bold;
+   
+        border-radius: 5px;
+        padding: 10px 20px 10px 20px;
+        margin-right: 100px;
+        margin-bottom: 20px;
+ 
+        float: right;
+}
+
+.buy-btn:hover{
+    color:rgba(0, 0, 0, 0.829);
+    background-color:rgba(231, 195, 129, 0.664);
+    border:2px rgba(0, 0, 0, 0.322) solid;
+    height: 60px;
+    width: 120px;
+    vertical-align: middle;
+  }
+
+
+
+
+
+
+
+.footer {
+    /*這裡開始是資訊列*/
+    color: white;
+    background-color: rgba(0, 0, 0, 0.637);
+    border-top: rgb(220, 228, 248) solid 3px;
+    display: block;
+    height: 100px;
+    text-align: center;
+}
+
+.foot-btn {
+    letter-spacing: 100px;
+
+}
+
+.fb {
+    content: url("../img/facebook.png");
+    width: 100%;
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.ig {
+    content: url("../img/instagram.png");
+    width: 100%;
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.mail {
+    content: url("../img/email.png");
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;
+}
+.about {
+    content: url("../img/info.png");
+    width: 100%;
+    max-width: 45px;
+    max-height: 45px;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員專區</title>
+
+    <style>
+        @import "../css/client.css";
+    </style>
+    <script>
+        function show1() {
+            var button1 = document.getElementById("button1");
+            var button2 = document.getElementById("button2");
+            var card1 = document.getElementById("card");
+            var card2 = document.getElementById("card2");
+            if (card2.style.display == "flex") {
+                card2.style.display = "none";
+                card1.style.display = "flex"
+                button2.style.backgroundColor = "rgba(150, 171, 216, 0.3)"
+                button1.style.backgroundColor = "rgba(78, 115, 194, 0.3)"
+            }
+        }
+        function show2() {
+            var button1 = document.getElementById("button1");
+            var button2 = document.getElementById("button2");
+            var card1 = document.getElementById("card");
+            var card2 = document.getElementById("card2");
+            if (card2.style.display == "none") {
+                card2.style.display = "flex";
+                card1.style.display = "none"
+                button2.style.backgroundColor = "rgba(78, 115, 194, 0.3)" 
+                button1.style.backgroundColor = "rgba(150, 171, 216, 0.3)"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--這裡是選單-->
+    <div id="top-bar">
+
+        <div class="menu-btn">
+            <a href="../html/shopping_car.html"><img src="../img/shopping-cart.png" class="menu-img"></a>
+            <a href="../html/client.html"><img src="../img/client.png" class="menu-img"></a>
+            <!--有選單的程式碼
+                <div class="dropdown"><a href="html/client.html"><img src="img/client.png"
+                        class="menu-img dropbtn"></a>
+                <div class="dropdown-content">
+                    <a href="#">Log In</a>
+                    <a href="html/client.html">會員專區</a>
+                </div>
+            -->
+
+            <div class="dropdown"><img src="../img/console.png" class="menu-img dropbtn">
+                <div class="dropdown-content">
+                    <a href="../html/list-ps5.html">PS5</a>
+                    <a href="../html/list-ps4.html">PS4</a>
+                    <a href="../html/list-switch.html">SWITCH</a>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="../index.html"><img src="../img/gamedisk.png" class="logo"></a>
+
+        <div class="search">
+            <div class="search-text"><input type="search" name="q" placeholder="Search" size="100"></div>
+            <div class="search-btn"><input type="button"></div>
+        </div>
+
+
+    </div>
+    <!--這裡是頁面-->
+    <div id="content">
+        <div class="title">
+            <div class="title-bg">會員專區</div>
+        </div>
+        <div class="infor">
+            <div class="info-menu">
+                <button id="button1" onclick="show1()">會員資料</button>
+                <button id="button2" style="border-right: solid 3px rgb(255, 255, 255);" onclick="show2()">購買紀錄</button>
+            </div>
+            <div id="card">
+                <div class="prc"><img src="../img/S__110067994.jpg" class="card-img"></div>
+                <div class="info">
+                    <form>
+                        <table>
+                            <tr>
+                                <td>姓名</td>
+                                <td class="table-info"><input type="text" name="name"></td>
+                                <td>性別</td>
+                                <td class="table-info">男<input type="radio" name="gender" value="male">
+                                    女<input type="radio" name="gender" value="female">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>生日 </td>
+                                <td colspan="3" class="table-info"><input type="date" name="birthday"></td>
+                            </tr>
+
+                            <tr>
+                                <td>手機</td>
+                                <td class="table-info"><input type="text" name="cellphone" maxlength="10"></td>
+                                <td>市內電話</td>
+                                <td class="table-info"><input type="tel" name="tel" maxlength="10"></td>
+                            </tr>
+                            <tr>
+                                <td> email</td>
+                                <td colspan="3" class="table-info"> <input type="email" size="50" name="email"></td>
+                            </tr>
+                            <tr>
+                                <td> 地址</td>
+                                <td colspan="3" class="table-info">
+                                    <select name="CountyName">
+                                        <option value="臺北市" selected>臺北市</option>
+                                        <option value="宜蘭縣">宜蘭縣</option>
+                                        <option value="桃園縣">桃園縣</option>
+                                        <option value="新竹縣">新竹縣</option>
+                                        <option value="苗栗縣">苗栗縣</option>
+                                        <option value="臺中縣">臺中縣</option>
+                                        <option value="彰化縣">彰化縣</option>
+                                        <option value="南投縣">南投縣</option>
+                                        <option value="雲林縣">雲林縣</option>
+                                        <option value="嘉義縣">嘉義縣</option>
+                                        <option value="臺南縣">臺南縣</option>
+                                        <option value="高雄縣">高雄縣</option>
+                                        <option value="屏東縣">屏東縣</option>
+                                        <option value="臺東縣">臺東縣</option>
+                                        <option value="花蓮縣">花蓮縣</option>
+                                        <option value="澎湖縣">澎湖縣</option>
+                                        <option value="基隆市">基隆市</option>
+                                        <option value="新竹市">新竹市</option>
+                                        <option value="臺中市">臺中市</option>
+                                        <option value="嘉義市">嘉義市</option>
+                                        <option value="臺南市">臺南市</option>
+                                        <option value="高雄市">高雄市</option>
+                                        <option value="新北市">新北市</option>
+                                        <option value="金門縣">金門縣</option>
+                                        <option value="連江縣">連江縣</option>
+                                    </select>
+
+                                    <input type="text" size="50" name="address">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">備註</td>
+                                <td colspan="3" class="table-info" >
+                                    <textarea rows="5" cols="60" name="note"  style="    background:rgb(255, 255, 255); 
+                                    border: solid 2px  rgba(0, 0, 0, 0.616);
+                                    cursor:pointer;
+                                    border-radius: 5px;"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="form-btn">
+                                    <input class="table-btn" type="submit" value="更新" />
+                                    <input class="table-btn" type="reset" value="重設" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+
+
+
+            <div id="card2" style="display: none;">
+                <div class="list">
+                    <div class="record-title">
+                        <table class="title-table">
+                            <tr>
+                                <td class="title-td" style="padding-right: 180px;">商品名稱</td>
+                                <td class="title-td">訂單編號</td>
+                                <td class="title-td">商品數量</td>
+                                <td class="title-td">商品價格</td>
+                                <td class="title-td">合計</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="record">
+                        <img src="../img/spider.jpg" class="re-imgs">
+                        <table class="re-table">
+                            <tr>
+                                <td class="re-td">蜘蛛人</td>
+                                <td class="re-td">A12351522</td>
+                                <td class="re-td">1</td>
+                                <td class="re-td">$1888</td>
+                                <td class="re-td">$1888</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="record">
+                        <img src="../img/spider.jpg" class="re-imgs">
+                        <table class="re-table">
+                            <tr>
+                                <td class="re-td">蜘蛛人</td>
+                                <td class="re-td">A12351522</td>
+                                <td class="re-td">1</td>
+                                <td class="re-td">$1888</td>
+                                <td class="re-td">$1888</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="record" style="margin-bottom: 30px;">
+                        <img src="../img/spider.jpg" class="re-imgs">
+                        <table class="re-table">
+                            <tr>
+                                <td class="re-td">蜘蛛人</td>
+                                <td class="re-td">A12351522</td>
+                                <td class="re-td">1</td>
+                                <td class="re-td">$1888</td>
+                                <td class="re-td">$1888</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="foot-btn">
+                <a href="https://www.facebook.com/" class="fb"><input type="button"></a>
+                <a href="https://www.instagram.com/" class="ig"><input type="button"></a>
+                <a href="mailto:aoya17@gmail.com" class="mail"><input type="button"></a>
+                <a href="../html/about_us.html" class="about"><input type="button"></a>
+            </div>
+            <p class="b">Copyright@2021 By GameDisk Rights Reseved</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+body {
+    color: rgb(240, 240, 240);
+    font-family: "微軟正黑體";
+}
+
+#top-bar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    right: 0px;
+    background-color: rgba(220, 231, 252, 0.52);
+    background-blend-mode: multiply;
+    background-image: url("../img/4567.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+    max-height: 75px;
+    max-width: 75px;
+}
+
+.menu-btn {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 35px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+
+.menu-img {
+    display: flex;
+    float: right;
+    max-width: 35px;
+    max-height: 35px;
+    margin: 10px;
+    
+    
+}
+
+.dropdown {
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1c0;
+    max-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(221, 221, 221, 0.87);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #bbbbbb2c;
+}
+.search {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-self: center;
+    width: 800px;
+    padding-left: 400px;
+    padding-top: 35px;
+}
+
+.search-text {
+    display: flex;
+}
+
+.search-btn {
+    display: flex;
+    content: url("../img/loupe.png");
+    padding-left: 10px;
+    width: 35px;
+    height: 25px;
+}
+
+#content {
+    /*這裡開始是主頁面*/
+    background-color: rgba(210, 227, 252, 0.301);
+    background-blend-mode: multiply;
+    background-image: url("../img/1234.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 100px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: auto;
+}
+
+.mySlides {
+    display: none
+}
+
+.w3-left, .w3-right, .w3-badge {
+    cursor: pointer
+}
+
+.w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0
+}
+
+.ad {
+    background-color: rgba(0, 0, 0, 0.377);
+    top: 0px;
+    left: 0px;
+    height: 600px;
+    right: 0px;
+}
+
+.adimg {
+    display: block;
+    top: 0px;
+    left: 0px;
+    height: 600px;
+    width: 100%;
+    right: 0px;
+    max-height: 600px;
+    max-width: 100%;
+    border-bottom: rgba(231, 243, 253, 0.815) solid 5px;
+}
+
+.adbtn-l {
+    float: left;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+.adbtn-r {
+    float: right;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+.recommend {
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 50px;
+
+}
+
+.title-bg {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.349);
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: rgba(212, 182, 121, 0.651) solid 5px;
+    color:rgb(255, 211, 123);
+    font-weight: bolder;
+}
+
+.exhibit {
+    display: inline-block;
+    margin: auto;
+    column-gap: 10ch;
+    column-width: 200px;
+    column-count: 3;
+}
+
+.a {
+    -webkit-column-break-after: always;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(74, 80, 82, 0.527);
+    border: 3px solid rgba(29, 33, 85, 0.808);
+    border-radius: 5px;
+    font-size: 20px;
+
+    padding: 20px;
+}
+
+.eximg {
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    margin: 100px 10px 50px 10px;
+    border-radius: 5px;
+    box-shadow: 15px 10px 5px 0px rgba(0, 0, 0, 0.514);
+    border: 3px solid rgba(212, 182, 121, 0.808);
+}
+
+#centerimg {
+    margin-top: 200px;
+}
+
+.category {
+    text-align: center;
+}
+
+.ceimg {
+    margin: 50px 10px 50px 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.footer {
+    /*這裡開始是資訊列*/
+    background-color: rgba(0, 0, 0, 0.637);
+    border-top: rgb(220, 228, 248) solid 3px;
+    display: block;
+
+    height: 150px;
+    text-align: center;
+    padding: 15px;
+}
+
+.foot-btn {
+    letter-spacing: 100px;
+
+}
+
+.fb {
+    content: url("../img/facebook.png");
+    width: 100%;
+    max-width: 45px;
+    max-height: 45px;
+    
+}
+
+.ig {
+    content: url("../img/instagram.png");
+    width: 100%;
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.mail {
+    content: url("../img/email.png");
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;
+}
+.about {
+    content: url("../img/info.png");
+    width: 100%;
+    max-width: 45px;
+    max-height: 45px;
+}
