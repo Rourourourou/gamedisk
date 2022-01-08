@@ -27,7 +27,11 @@
 <body>
     <!--這裡是選單-->
     <div id="top-bar">
-
+        <div><a href="index.html"><img src="img/gamedisk.png" class="logo"></a></div>
+        <div class="search">
+            <div class="search-text"><input type="search" name="q" placeholder="Search" size="100"></div>
+            <div class="search-btn"><input type="button"></div>
+        </div>
         <div class="menu-btn">
             <a href="html/shopping_car.html"><img src="img/shopping-cart.png" class="menu-img"></a>
             <a href="html/client.html"><img src="img/client.png" class="menu-img"></a>
@@ -47,14 +51,6 @@
                     <a href="html/list-switch.html">SWITCH</a>
                 </div>
             </div>
-
-        </div>
-
-        <a href="index.html"><img src="img/gamedisk.png" class="logo"></a>
-
-        <div class="search">
-            <div class="search-text"><input type="search" name="q" placeholder="Search" size="100"></div>
-            <div class="search-btn"><input type="button"></div>
         </div>
 
     </div>
@@ -79,18 +75,31 @@
                 var slideIndex = 1;
                 showDivs1(slideIndex);
 
-                function plusDivs1(n) {
+                function plusDivs1(n) {/*按鈕*/
                     showDivs1(slideIndex += n);
                 }
 
-                function currentDiv1(n) {
+                function currentDiv1(n) {/*圖*/
                     showDivs1(slideIndex = n);
+                }
+                carousel();
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) { slideIndex = 1 }
+                    x[slideIndex - 1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
                 }
 
                 function showDivs1(n) {
                     var i;
                     var x = document.getElementsByClassName("mySlides");
                     var dots = document.getElementsByClassName("demo");
+                    this.carousel= carousel;
                     if (n > x.length) { slideIndex = 1 }
                     if (n < 1) { slideIndex = x.length }
                     for (i = 0; i < x.length; i++) {
@@ -102,6 +111,7 @@
                     x[slideIndex - 1].style.display = "inline-block";
                     dots[slideIndex - 1].className += " w3-white";
                 }
+                showDivs1.carousel;
             </script>
         </div>
 
@@ -112,15 +122,15 @@
             </div>
             <div class="exhibit">
                 <a href="html/sell-sm.html"><img src="img/spider.jpg" class="eximg"></a>
-                <p class="a">承襲以漫威超級英雄漫畫《蜘蛛人》改編的內容與玩法，並改由新世代主角邁爾斯‧摩拉斯擔綱演出。<br/>
+                <p class="a">承襲以漫威超級英雄漫畫《蜘蛛人》改編的內容與玩法，並改由新世代主角邁爾斯‧摩拉斯擔綱演出。<br />
                     本次更新導入了「ZivaRT」來讓穿著特定戰衣時邁爾斯的肌肉動態更寫實等，此外還改善了遊戲運作的穩定性。
-                    </p>
+                </p>
                 <a href="html/sell-ds3.html"><img src="img/Dark_souls.jpg" class="eximg" id="centerimg"></a>
                 <p class="a">本作將帶來更廣闊的世界地圖來讓玩家恣意探索，並加強了遊戲整體氣氛的表現，讓畫面呈現不只是一片黑暗，而是會藉由黃昏或是霧氣等天氣效果，來強化遊戲所設定的「末日」主題。</p>
                 <a href="html/sell.html"><img src="img/GTA5.jpg" class="eximg"></a>
-                <p class="a">本系列至今為止龐大也最具野心的作品。<br/>
+                <p class="a">本系列至今為止龐大也最具野心的作品。<br />
                     以幅員遼闊的 Los Santos 城市及鄰近地區為舞台，同時也帶來了上至高山、下至深海，規模空前、細膩無比且充滿生命力的開放世界遊戲。
-                    </p>
+                </p>
             </div>
         </div>
         <!--這裡是分類-->
